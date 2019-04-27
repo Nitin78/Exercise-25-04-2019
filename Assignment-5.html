@@ -1,0 +1,28 @@
+<!---->
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>LONGEST WORD IN STRING</title>
+</head>
+<body>
+  <script type="text/javascript">
+  	
+function longest(str)
+{
+  var array = str.match(/[A-z}[a-z]{0,}/gi);
+  var result = array[0];
+
+  for(var x = 1 ; x < array.length ; x++)
+  {
+    if(result.length < array[x].length)
+    {
+    result = array[x];
+    } 
+  }
+  return result;
+}
+document.write(longest('This program is all about the longest digit in the string.'));
+  </script>
+</body>
+</html>
