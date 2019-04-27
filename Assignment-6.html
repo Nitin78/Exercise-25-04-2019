@@ -1,0 +1,25 @@
+<!-- Write a JavaScript function which accepts an argument and returns the type of that argument.-->
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Return Type of Variable</title>
+</head>
+<body>
+  <script type="text/javascript">
+  	var v= (prompt("Enter Variable"));
+    if(v=="true" || v=='false')
+    {
+    document.write("boolean");
+    } 
+    else if(v.match(/[A-Z][a-z]/))
+    {
+      document.write("String")
+    }
+    else{
+     document.write("Number"); 
+    }
+
+  </script>
+</body>
+</html>
