@@ -1,0 +1,45 @@
+<!--Write a JavaScript function to count the occurrence of a substring in a string.-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>occurence of string</title>
+</head>
+<body>
+
+
+	
+
+	<script type="text/javascript">
+		
+				var string1 = prompt("Enter the sentence");
+                var string2 = prompt("Enter String")
+
+                var count = 0;
+                
+                
+
+				function checkOccurence(string1){
+
+                  var splittedString = string1.split(" ");
+
+                  for (var i = 0; i <= splittedString.length; i++) {
+                  	
+                  			if (splittedString[i] == string2 ) {
+
+                                count = count + 1;
+                  			}
+
+                  }
+                  return count;
+
+				}
+                
+                checkOccurence(string1);
+
+				alert("repeated "+ count + " times ");
+
+
+	</script>
+
+</body>
+</html>

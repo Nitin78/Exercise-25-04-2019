@@ -1,0 +1,40 @@
+<!-- Write a JavaScript function to merge two arrays and removes all duplicates elements.-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment 9</title>
+</head>
+<body>
+<script type="text/javascript">
+	
+
+
+	function filter(array){
+
+		var first = array.concat();
+
+		for (var i = 0; i < first.length; i++) {
+			
+			for (var j = i+1; j < first.length; ++j) {
+
+					if(first[i]== first[j])
+						first.splice(j--, 1);
+
+			}
+		}
+
+
+		return first;
+	}
+
+		var arr1 = ["Nitin","Kumar","ABC"];
+		var arr2 = ["PQR","ABC","XYZ"];
+
+		var arr3 = filter(arr1.concat(arr2));
+
+		console.log(arr3);
+
+
+</script>
+</body>
+</html>
