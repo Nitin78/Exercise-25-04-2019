@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Opening a new Window</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js">
+	
+</script>
+
+</head>
+<body>
+<script type="text/javascript">
+$(document).ready(function() {
+	$('#b1').click(function(event) {
+$('#divh').find('span').remove()
+	});
+});
+
+</script>
+<div id="divh">
+	span1<br>
+	<span>span2</span><br>
+	<span>span3</span><br>
+	<span>span4</span><br>
+	<span>span5</span><br>
+	<span>span6</span><br>
+</div>
+<button id="b1">Remove Span</button>
+</body>
+</html>

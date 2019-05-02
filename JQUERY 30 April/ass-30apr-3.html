@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+<script type="text/javascript">
+$(document).ready(function() {
+ 
+ $("#b1").click(function(event) {
+ $("#NodesToMove").detach().appendTo('#Destination');
+ });
+ });
+
+    
+</script>
+
+    <H1 align="center">MOVE DIV CONTENT</H1><hr><br><br>
+    <div id="NodesToMove">
+    <p >Hi,this is 1st div</p>
+    </div>
+   <div id="Destination">
+    <p >Hi,this is 2nd div</p>
+    </div>
+<button id="b1">MOVE DIV CONTENT</button>
+</body>
+</html> 

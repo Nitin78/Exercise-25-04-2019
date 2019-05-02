@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+<script type="text/javascript">
+$(document).ready(function() {
+  var len = 0;
+  var maxchar = 20;
+  $( '#my-input' ).keyup(function(){
+    len = this.value.length
+    if(len > maxchar){
+        return false;
+    }
+    else if (len > 0) {
+        $( "#remainingC" ).html( "Remaining characters: " +( maxchar - len ) );
+    }
+    else {
+        $( "#remainingC" ).html( "Remaining characters: " +( maxchar ) );
+    }
+  })
+});
+
+</script>
+
+    <H1 align="center">Assingment 1</H1><hr><br><br>
+    <p align="center">PROVIDE INPUT<input type="text" placeholder="Enter the  input here.. (limited to 20 characters)" name="my-name" id="my-input" maxlength="20"/></p>
+    <p align=center><span id='remainingC'></span></p>
+
+</body>
+</html> 

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Delay in Excution Queue</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+<button class="mButton">Animation Delay</button>
+<div class="moreTextContainer" style="border: 1px solid #000; background-color: blue;margin-right: 0px; padding: 10px; position: absolute;width: 100px; height: 80px;">
+	Trying some JQuery 
+</div>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$(".mButton").click(function() {
+			$(".moreTextContainer").delay(3000);
+		    $(".moreTextContainer").animate({height: '200px'}, '5000');
+		    $(".moreTextContainer").delay(3000);
+			$(".moreTextContainer").animate({opacity: '0.2'}, 'slow');
+			$(".moreTextContainer").delay(3000);
+			$(".moreTextContainer").animate({width: '200px'}, 'slow');
+			$(".moreTextContainer").delay(3000);
+			$(".moreTextContainer").animate({height: '80px'}, 'slow');
+			$(".moreTextContainer").delay(3000);
+		});
+
+	});
+</script>
+</body>
+</html>

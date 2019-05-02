@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>count Combo items</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+
+<body>
+<script type="text/javascript">
+$(document).ready(function() {
+ 
+ $("#b1").click(function(event) {
+
+var s=$('#s1 > option').length;
+alert(s+" elements available");
+ });
+ });   
+</script>
+<select id="s1">
+	<option value="java">JAVA</option>
+	<option value="c">C</option>
+	<option value="c++">C++</option>
+	<option value="python">PYTHON</option>
+	<option value="perl">PERL</option>
+	<option value="TPF">TPF</option>
+</select>
+<button id="b1">COUNT</button>
+</body>
+</html> 

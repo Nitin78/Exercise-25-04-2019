@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DIV EXPAND</title>
+<style>
+div {
+  width:100px;
+  height:100px;
+  background: #a00;
+  margin:100px;
+  transition: all 1s ease-out;
+}
+
+div.active {
+  transform: scale(2,2);
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+		$(function(){
+    $("div").click(function(){$(this).toggleClass("active")})
+});
+</script>
+<div>EXPAND IT!</div>
+</body>
+</html>
+

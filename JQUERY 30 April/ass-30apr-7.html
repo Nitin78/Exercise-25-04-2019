@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Highlight disable items</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+<script type="text/javascript">
+$(document).ready(function() {
+ 
+ $("#b1").click(function(event) {
+
+$('input:disabled').css({
+	backgroundColor: 'yellow'});
+ });
+ });
+
+    
+</script>
+<div id="d">
+    <H1 align="center">FOCUS ON FIELD 1st</H1><hr><br><br>
+    <p align="center">USER NAME:<input type="text" name="my-name" id="my-input"  disabled maxlength="20"/></p>
+    <p align="center">PASSWORD:<input type="text" name="my-name" id="my-input"  disabled="disabled" maxlength="20"/></p>
+    <p align="center">EMAIL:<input type="text" name="my-name" id="my-input" maxlength="20"/></p>
+    <p align="center"><button id="b1">MOVE DIV CONTENT</button></p>
+</div>
+</body>
+</html> 
