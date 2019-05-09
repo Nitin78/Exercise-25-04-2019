@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Enter  data in text field is Prohibited</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+i = 0;
+$(document).ready(function(){
+  $("input").keypress(function(){
+   alert("please dont enter this field");
+  });
+});
+</script>
+</head>
+<body>
+
+Enter your name: <input type="text">
+
+
+</body>
+</html>

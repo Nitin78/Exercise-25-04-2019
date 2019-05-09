@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title> Remove Table Rows</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $(".delete-row").click(function(){
+            $("table tbody").find('input[name="record"]').each(function(){
+            	if($(this).is(":checked")){
+                    $(this).parents("tr").remove();
+                }
+            });
+        });
+    });    
+</script>
+</head>
+<body>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Select</th>
+                <th>Name</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><input type="checkbox" name="record"></td>
+                <form>
+                <td>Ashish Tyagi</td>
+                <td>aktyagi828@mail.com</td>
+                </form>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td><input type="checkbox" name="record"></td>
+                <form>
+                <td>Nitin Tyagi</td>
+                <td>nkltyagi423@mail.com</td>
+                </form>
+            </tr>
+        </tbody>
+    </table>
+    <button type="button" class="delete-row">Delete Row</button>
+</body> 
+</html>                            

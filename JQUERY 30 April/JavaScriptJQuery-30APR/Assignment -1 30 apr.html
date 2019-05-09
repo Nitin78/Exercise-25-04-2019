@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<table id="ItemsTable" >​
+    <tbody>
+   <tr>
+     <th>
+       Number
+     </th>
+     <th>
+       Number2
+     </th>
+    </tr>
+  <tr>
+    <td>32174711</td> 
+    <td>32174712</td>  
+  </tr>
+</tbody>
+</table>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		
+	
+ $("#ItemsTable tbody tr").each(function() {
+    // find the first td in the row
+    var value = $(this).find("td:first").text();
+    // display the value in console
+    console.log(value);
+});
+ });
+</script>
+</body>
+</html>
