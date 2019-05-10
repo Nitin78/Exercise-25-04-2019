@@ -5,13 +5,13 @@ class StringDemo
 		char[] ch =s.toCharArray();
 		int l=ch.length;
 		for (int i=0;i<l ;i++ ) {
-			/*if(ch[i]==' ')
+			if(ch[i]==' ')
 			{
 				System.out.print("#");
 			}
-			else{*/
+			else{
 			System.out.println(ch[i]);
-		//}
+		}
 		}
 		
 	}
