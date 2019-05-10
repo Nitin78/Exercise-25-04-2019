@@ -11,5 +11,6 @@ class Assignment12 {
         String str2 = sc.nextLine();
         System.out.println("Original String: " + str1);
         System.out.println("Specified sequence of char values: " + str2);
+        System.out.println(str1.contains(str2));
     }
 }
